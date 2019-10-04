@@ -1,0 +1,74 @@
+﻿Summary:
+Fetch Rewards has asked that the Data Engineer Team develop an algorithm to calculate a metric to compare two files and determine how similar they are.   Documents that are the same will return a value of 1, and files that do not match at all, will return a value of 0.  
+
+
+CSR Number/s: 
+* CSR000101 – Fetch Rewards Metric Project.  
+
+
+Program Name:
+* Folder: Adhoc 
+* Fetch_Data_Challenge.ipynb        
+
+
+Production Support (Support Priority):
+* Currently If this job goes down, it can wait until normal business hours to resolve.
+
+
+Contacts / Title:
+Data Engineer:                                 Kevin Ducat
+Data  Architect:                        Camron Khan
+
+
+Runtime Instructions:
+Currently this program is developed in Python via Jupyter Notebook.    
+
+
+High level Process  Flow:  
+Read 2 files, and produce the metric.
+.
+Scheduler Daily Flow:  
+Currently this process is ran on an ad-hoc bases and is not in the daily batch schedule.
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	Database / API Scripts:
+N/A
+
+
+Data Sources:
+* sample1.txt
+* sample2.txt
+* sample3.txt
+             
+Data Target:
+* Matching Value = 
+   * Number of Values Matched between the files 
+   * divided by the Number of Values in either Dictionary
+* Value of 1 is fully matching
+* Value of 0 has no matching values
+
+
+Assumptions:
+* Punctuation will not be used in the compare.
+* Case will not be used in the compare.
+
+
+Future Considerations:
+* Reevaluate the logic of the metric
+* Convert the code from Jupyter Notebook to native Python for the ability to package as a Web Service or Docker Container.
